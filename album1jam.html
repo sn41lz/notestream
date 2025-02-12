@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling without moving</title>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="icon" href="imagen (1).png">
+    <style>
+        #player-container {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #000;
+            padding: 15px;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #album-cover {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        #song-info {
+            flex: 1;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #audio-player {
+            flex: 2;
+            min-width: 300px;
+        }
+        .progress-container {
+            flex: 1;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="logo">
+                    <img src="imagen (1).png" alt="NoteStream Logo">
+                    <span>NoteStream</span>
+                </div>  
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="explore.html ">Explorar</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="Sobrenosotros.html">Sobre nosotros</a></li>
+                </ul>
+                <div class="user-actions">
+                    <a href="Iniciodesesion.html" class="btn-login">Iniciar Sesión</a>
+                    <a href="registro.html" class="btn-signup">Registrarse</a>
+                    <a href="canciones.xml" target="_blank"download="archivo.xml"  class="btn-login">Descargar XML</a>
+                </div>
+            </nav>
+        <h1>Travelling without moving</h1>
+    </header>
+
+    <section class="song-list">
+        <ul>
+            <li>🎵 Virtual Insanity - <a href="#" onclick="playSong('canciones/virtual_insanity_remastered_2013.mp3', 'Virtual Insanity')">Reproducir</a></li>
+            <li>🎵 Cosmic Girl - <a href="#" onclick="playSong('canciones/jamiroquai_-_cosmic_girl_video.mp3', 'Cosmic Girl')">Reproducir</a></li>
+            <li>🎵 Use The Force - <a href="#" onclick="playSong('canciones/jamiroquai_-_use_the_force_audio.mp3', 'Use The Force')">Reproducir</a></li>
+            <li>🎵 Alright - <a href="#" onclick="playSong('canciones/jamiroquai_-_alright_video.mp3', 'Alright')">Reproducir</a></li>
+            <li>🎵 Drifting Along - <a href="#" onclick="playSong('canciones/jamiroquai_-_drifting_along_audio.mp3', 'Drifting Along')">Reproducir</a></li>
+        </ul>
+    </section>
+    <div class="imgalbum">
+        <img src="discos/travelling.png " alt="Track 2"
+        width="300" height="300">
+    </div>
+   
+    <div id="player-container">
+        <img id="album-cover" src="discos/travelling.png" alt="Album Cover">
+        <div id="song-info">
+            <p id="song-title">Título de la canción</p>
+        </div>
+        <audio id="audio-player" controls ontimeupdate="updateTime()"></audio>
+        <div class="progress-container">
+            <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+        </div>
+    </div>
+
+    <script>
+        function playSong(songFile, songTitle) {
+            var player = document.getElementById('audio-player');
+            var container = document.getElementById('player-container');
+            var title = document.getElementById('song-title');
+            var durationDisplay = document.getElementById('total-duration');
+
+            player.src = songFile
+            player.play();
+            container.style.display = 'flex';
+            title.textContent = songTitle;
+
+            player.onloadedmetadata = function() {
+                durationDisplay.textContent = formatTime(player.duration);
+            };
+        }
+
+        function updateTime() {
+            var player = document.getElementById('audio-player');
+            var currentTimeDisplay = document.getElementById('current-time');
+            currentTimeDisplay.textContent = formatTime(player.currentTime);
+        }
+
+        function formatTime(seconds) {
+            var minutes = Math.floor(seconds / 60);
+            var secs = Math.floor(seconds % 60);
+            return minutes + ":" + (secs < 10 ? "0" : "") + secs;
+        }
+    </script>
+</body>
+</html>

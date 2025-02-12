@@ -1,0 +1,223 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+header {
+    background-color: #8a2be2; /* Violeta */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5); /* Sombra violeta */
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8a2be2; /* Violeta */
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #262626; /* Fondo gris más oscuro */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.3); /* Sombra violeta */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-5px); /* Efecto de levantar al pasar el ratón */
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.5); /* Sombra más intensa */
+}
+
+.member h3 {
+    margin-bottom: 10px;
+    color: #8a2be2; /* Violeta */
+}
+
+.member p {
+    font-size: 14px;
+    color: #ccc; /* Texto gris claro */
+}
+
+
+header {
+    background-color: black; /* Morado */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e0b3ff; /* Morado más claro */
+}
+
+/* Botones de usuario */
+.user-actions a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-login {
+    background-color: #8a2be2;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-signup {
+    background-color: #8a2be2;
+    color:white;
+    border: 2px solid white;
+}
+
+.btn-login:hover, .btn-signup:hover {
+    background-color: #e0b3ff;
+    color: black;
+}
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8a2be2;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: #b3b3b3;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #8a2be2;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    font-size: 20px;
+    color: #b3b3b3;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #8a2be2;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .track-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-options {
+        flex-direction: column;
+    }
+}

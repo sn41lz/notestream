@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Tipo para el año de formación: número positivo que no supere 2025 -->
+  <xs:simpleType name="anyoFormacionType">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:maxInclusive value="2025"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!-- Elemento raíz: se permite uno de tres bloques mediante xs:choice -->
+  <xs:element name="repositorio_musica">
+    <xs:complexType>
+      <xs:choice>
+        <!-- Opción 1: Grupos y Discos -->
+        <xs:element name="grupos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="grupo" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="pais" type="xs:string"/>
+                    <xs:element name="anyo" type="anyoFormacionType"/>
+                    <xs:element name="web" type="xs:string"/>
+                    <!-- Discos anidados en cada grupo -->
+                    <xs:element name="discos">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="disco" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="titulo" type="xs:string"/>
+                                <xs:element name="anyo" type="xs:positiveInteger"/>
+                                <xs:element name="genero" type="xs:string"/>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <!-- Opción 2: Discos y Canciones -->
+        <xs:element name="discos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="disco" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titulo" type="xs:string"/>
+                    <xs:element name="anyo" type="xs:positiveInteger"/>
+                    <xs:element name="genero" type="xs:string"/>
+                    <!-- Canciones anidadas en cada disco -->
+                    <xs:element name="canciones">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="cancion" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="titulo" type="xs:string"/>
+                                <xs:element name="num_pista" type="xs:positiveInteger"/>
+                                <xs:element name="duracion_minutos" type="xs:positiveInteger"/>
+                                <xs:element name="duracion_segundos" type="xs:positiveInteger"/>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <!-- Opción 3: Estilos y Canciones -->
+        <xs:element name="estilos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="estilo" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="descripcion" type="xs:string"/>
+                    <!-- Canciones anidadas en cada estilo -->
+                    <xs:element name="canciones">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="cancion" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="titulo" type="xs:string"/>
+                                <xs:element name="num_pista" type="xs:positiveInteger"/>
+                                <xs:element name="duracion_minutos" type="xs:positiveInteger"/>
+                                <xs:element name="duracion_segundos" type="xs:positiveInteger"/>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

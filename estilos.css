@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a001f;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #8a2be2;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+.style-card {
+    background-color: #2a003f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.style-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.style-card h2 {
+    color: #8a2be2;
+    margin-bottom: 10px;
+}
+.style-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.style-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+.style-card ul li {
+    margin: 5px 0;
+    color: #e0b3ff;
+}
+footer {
+    background-color: #0a0a0a;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8a2be2;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: #b3b3b3;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #8a2be2;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    font-size: 20px;
+    color: #b3b3b3;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #8a2be2;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .track-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-options {
+        flex-direction: column;
+    }
+}
+
+footer p {
+    margin: 0;
+}
+header {
+    background-color: black; /* Morado */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e0b3ff; /* Morado más claro */
+}
+
+/* Botones de usuario */
+.user-actions a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-login {
+    background-color: #8a2be2;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-signup {
+    background-color: #8a2be2;
+    color:white;
+    border: 2px solid white;
+}
+
+.btn-login:hover, .btn-signup:hover {
+    background-color: #e0b3ff;
+    color: black;
+}

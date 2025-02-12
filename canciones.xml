@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositorio_musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="musica.xsd">
+  <discos>
+    <disco id="1">
+      <titulo>In the Court of the Crimson King</titulo>
+      <anyo>1969</anyo>
+      <genero>Rock Progresivo</genero>
+      <canciones>
+        <cancion id="1">
+          <titulo>21st Century Schizoid Man</titulo>
+          <num_pista>1</num_pista>
+          <duracion_minutos>7</duracion_minutos>
+          <duracion_segundos>24</duracion_segundos>
+        </cancion>
+        <cancion id="2">
+          <titulo>I Talk to the Wind</titulo>
+          <num_pista>2</num_pista>
+          <duracion_minutos>6</duracion_minutos>
+          <duracion_segundos>5</duracion_segundos>
+        </cancion>
+        <cancion id="3">
+          <titulo>Epitaph</titulo>
+          <num_pista>3</num_pista>
+          <duracion_minutos>8</duracion_minutos>
+          <duracion_segundos>47</duracion_segundos>
+        </cancion>
+        <cancion id="4">
+          <titulo>Moonchild</titulo>
+          <num_pista>4</num_pista>
+          <duracion_minutos>12</duracion_minutos>
+          <duracion_segundos>13</duracion_segundos>
+        </cancion>
+        <cancion id="5">
+          <titulo>The Court of the Crimson King</titulo>
+          <num_pista>5</num_pista>
+          <duracion_minutos>9</duracion_minutos>
+          <duracion_segundos>25</duracion_segundos>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="2">
+      <titulo>Red</titulo>
+      <anyo>1974</anyo>
+      <genero>Rock Progresivo</genero>
+      <canciones>
+        <cancion id="6">
+          <titulo>Red</titulo>
+          <num_pista>1</num_pista>
+          <duracion_minutos>6</duracion_minutos>
+          <duracion_segundos>20</duracion_segundos>
+        </cancion>
+        <cancion id="7">
+          <titulo>Fallen Angel</titulo>
+          <num_pista>2</num_pista>
+          <duracion_minutos>6</duracion_minutos>
+          <duracion_segundos>1</duracion_segundos>
+        </cancion>
+        <cancion id="8">
+          <titulo>One More Red Nightmare</titulo>
+          <num_pista>3</num_pista>
+          <duracion_minutos>7</duracion_minutos>
+          <duracion_segundos>9</duracion_segundos>
+        </cancion>
+        <cancion id="9">
+          <titulo>Providence</titulo>
+          <num_pista>4</num_pista>
+          <duracion_minutos>8</duracion_minutos>
+          <duracion_segundos>10</duracion_segundos>
+        </cancion>
+        <cancion id="10">
+          <titulo>Starless</titulo>
+          <num_pista>5</num_pista>
+          <duracion_minutos>12</duracion_minutos>
+          <duracion_segundos>18</duracion_segundos>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="3">
+      <titulo>Badmotorfinger</titulo>
+      <anyo>1991</anyo>
+      <genero>Grunge</genero>
+      <canciones>
+        <cancion id="11">
+          <titulo>Rusty Cage</titulo>
+          <num_pista>1</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>26</duracion_segundos>
+        </cancion>
+        <cancion id="12">
+          <titulo>Outshined</titulo>
+          <num_pista>2</num_pista>
+          <duracion_minutos>5</duracion_minutos>
+          <duracion_segundos>11</duracion_segundos>
+        </cancion>
+        <cancion id="13">
+          <titulo>Slaves &amp; Bulldozers</titulo>
+          <num_pista>3</num_pista>
+          <duracion_minutos>6</duracion_minutos>
+          <duracion_segundos>56</duracion_segundos>
+        </cancion>
+        <cancion id="14">
+          <titulo>Jesus Christ Pose</titulo>
+          <num_pista>4</num_pista>
+          <duracion_minutos>5</duracion_minutos>
+          <duracion_segundos>51</duracion_segundos>
+        </cancion>
+        <cancion id="15">
+          <titulo>Room a Thousand Years Wide</titulo>
+          <num_pista>5</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>6</duracion_segundos>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="4">
+      <titulo>Superunknown</titulo>
+      <anyo>1994</anyo>
+      <genero>Grunge</genero>
+      <canciones>
+        <cancion id="16">
+          <titulo>Let Me Drown</titulo>
+          <num_pista>1</num_pista>
+          <duracion_minutos>3</duracion_minutos>
+          <duracion_segundos>52</duracion_segundos>
+        </cancion>
+        <cancion id="17">
+          <titulo>My Wave</titulo>
+          <num_pista>2</num_pista>
+          <duracion_minutos>5</duracion_minutos>
+          <duracion_segundos>12</duracion_segundos>
+        </cancion>
+        <cancion id="18">
+          <titulo>Fell on Black Days</titulo>
+          <num_pista>3</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>42</duracion_segundos>
+        </cancion>
+        <cancion id="19">
+          <titulo>Black Hole Sun</titulo>
+          <num_pista>4</num_pista>
+          <duracion_minutos>5</duracion_minutos>
+          <duracion_segundos>18</duracion_segundos>
+        </cancion>
+        <cancion id="20">
+          <titulo>Spoonman</titulo>
+          <num_pista>5</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>6</duracion_segundos>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="5">
+      <titulo>Travelling Without Moving</titulo>
+      <anyo>1996</anyo>
+      <genero>Funk</genero>
+      <canciones>
+        <cancion id="21">
+          <titulo>Virtual Insanity</titulo>
+          <num_pista>1</num_pista>
+          <duracion_minutos>5</duracion_minutos>
+          <duracion_segundos>40</duracion_segundos>
+        </cancion>
+        <cancion id="22">
+          <titulo>Cosmic Girl</titulo>
+          <num_pista>2</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>3</duracion_segundos>
+        </cancion>
+        <cancion id="23">
+          <titulo>Use the Force</titulo>
+          <num_pista>3</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>1</duracion_segundos>
+        </cancion>
+        <cancion id="24">
+          <titulo>Alright</titulo>
+          <num_pista>4</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>23</duracion_segundos>
+        </cancion>
+        <cancion id="25">
+          <titulo>Drifting Along</titulo>
+          <num_pista>5</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>6</duracion_segundos>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="6">
+      <titulo>A Funk Odyssey</titulo>
+      <anyo>2001</anyo>
+      <genero>Funk</genero>
+      <canciones>
+        <cancion id="26">
+          <titulo>Feel So Good</titulo>
+          <num_pista>1</num_pista>
+          <duracion_minutos>5</duracion_minutos>
+          <duracion_segundos>23</duracion_segundos>
+        </cancion>
+        <cancion id="27">
+          <titulo>Little L</titulo>
+          <num_pista>2</num_pista>
+          <duracion_minutos>4</duracion_minutos>
+          <duracion_segundos>55</duracion_segundos>
+        </cancion>
+        <cancion id="28">
+          <titulo>You Give Me Something</titulo>
+          <num_pista>3</num_pista>
+          <duracion_minutos>3</duracion_minutos>
+          <duracion_segundos>20</duracion_segundos>
+        </cancion>
+        <cancion id="29">
+          <titulo>Love Foolosophy</titulo>
+          <num_pista>4</num_pista>
+          <duracion_minutos>3</duracion_minutos>
+          <duracion_segundos>45</duracion_segundos>
+        </cancion>
+        <cancion id="30">
+          <titulo>Corner of the Earth</titulo>
+          <num_pista>5</num_pista>
+          <duracion_minutos>5</duracion_minutos>
+          <duracion_segundos>40</duracion_segundos>
+        </cancion>
+      </canciones>
+    </disco>
+  </discos>
+</repositorio_musica>

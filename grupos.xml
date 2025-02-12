@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositorio_musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="musica.xsd">
+  <grupos>
+    <grupo id="1">
+      <nombre>King Crimson</nombre>
+      <pais>Reino Unido</pais>
+      <anyo>1968</anyo>
+      <web>https://www.kingcrimson.com</web>
+      <discos>
+        <disco id="1">
+          <titulo>In the Court of the Crimson King</titulo>
+          <anyo>1969</anyo>
+          <genero>Rock Progresivo</genero>
+        </disco>
+        <disco id="2">
+          <titulo>Red</titulo>
+          <anyo>1974</anyo>
+          <genero>Rock Progresivo</genero>
+        </disco>
+      </discos>
+    </grupo>
+    <grupo id="2">
+      <nombre>Soundgarden</nombre>
+      <pais>Estados Unidos</pais>
+      <anyo>1984</anyo>
+      <web>https://www.soundgardenworld.com</web>
+      <discos>
+        <disco id="3">
+          <titulo>Badmotorfinger</titulo>
+          <anyo>1991</anyo>
+          <genero>Grunge</genero>
+        </disco>
+        <disco id="4">
+          <titulo>Superunknown</titulo>
+          <anyo>1994</anyo>
+          <genero>Grunge</genero>
+        </disco>
+      </discos>
+    </grupo>
+    <grupo id="3">
+      <nombre>Jamiroquai</nombre>
+      <pais>Reino Unido</pais>
+      <anyo>1992</anyo>
+      <web>https://www.jamiroquai.com</web>
+      <discos>
+        <disco id="5">
+          <titulo>Travelling Without Moving</titulo>
+          <anyo>1996</anyo>
+          <genero>Funk</genero>
+        </disco>
+        <disco id="6">
+          <titulo>A Funk Odyssey</titulo>
+          <anyo>2001</anyo>
+          <genero>Funk</genero>
+        </disco>
+      </discos>
+    </grupo>
+  </grupos>
+</repositorio_musica>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Música - NoteStream</title>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
+    <link rel="icon" href="imagen (1).png">                                                                                                                      
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagen (1).png" alt="NoteStream Logo">
+                <span>NoteStream</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="Sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="estilos.html">Estilos</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="Iniciodesesion.html" class="btn-login">Iniciar Sesión</a>
+                <a href="registro.html" class="btn-signup">Registrarse</a>
+                <a href="grupos.xml" target="_blank"download="archivo.xml"  class="btn-login">Descargar XML</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Filtros de Búsqueda -->
+    <section class="filters">
+        <h2>Filtrar Canciones</h2>
+        <div class="filter-options">
+            <input type="text" placeholder="Buscar por título..." id="search">
+            <select id="genre">
+                <option value="">Genero</option>
+                <option value="pop">Rock Progresivo</option>
+                <option value="electronic">Funk</option>
+                <option value="electronic">Soul</option>
+                <option value="electronic">Grunge</option>
+            </select>
+            <button class="btn-explore">Buscar</button>
+        </div>
+    </section>
+    <section class="featured-tracks">
+        <h2>Resultados</h2>
+        <div class="track-list">
+            <!-- Track 1 -->
+            <div class="track">
+                <img src="grupos/king crimson.jpg" alt="Track 1">
+                <h3>King Crimson</h3>
+                <p>Rock Progresivo</p>
+                <div class="album-links">
+                    <a href="album1.html" target="_self">In the court of the Crimson King</a>
+                    <a href="album2.html" target="_self">Red</a>
+                </div>
+            </div>
+            <!-- Track 2 -->
+            <div class="track">
+                <img src="grupos/soundgarden.jpg" alt="Track 2">
+                <h3>Soundgarden</h3>
+                <p>Grunge</p>
+                <div class="album-links">
+                    <a href="album1sound.html" target="_self">Badmotorfinger</a>
+                    <a href="album2sound.html" target="_self">Superunknown</a>
+                </div>
+            </div>
+            <!-- Track 3 -->
+            <div class="track">
+                <img src="grupos/jamiroquai.jpg" alt="Track 3">
+                <h3>Jamiroquai</h3>
+                <p>Funk, Soul</p>
+                <div class="album-links">
+                    <a href="album1jam.html" target="_self">Traveling Without Moving</a>
+                    <a href="album2jam.html" target="_self">A Funk Odyssey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imagen (1).png" alt="NoteStream Logo">
+                <span class="brand-name">NoteStream</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("search");
+            const searchButton = document.querySelector(".btn-explore");
+            
+            const albums = {
+                "in the court of the crimson king": "album1.html",
+                "red": "album2.html",
+                "badmotorfinger": "album1sound.html",
+                "superunknown": "album2sound.html",
+                "traveling without moving": "album1jam.html",
+                "a funk odissey": "album2jam.html"
+            };
+    
+            // Espacio para agregar canciones
+            const songs = {
+    "i talk to the wind": "album1.html",
+    "21st century schizoid man": "album1.html",
+    "epitaph": "album1.html",
+    "moonchild": "album1.html",
+    "the court of the crimson king": "album1.html",
+    "red": "album2.html",
+    "fallen angel": "album2.html",
+    "one more red nightmare": "album2.html",
+    "providence": "album2.html",
+    "starless": "album2.html",
+    "virtual insanity": "album1sound.html",
+    "cosmic girl": "album1sound.html",
+    "use the force": "album1sound.html",
+    "alright": "album1sound.html",
+    "drifting along": "album1sound.html",
+    "feel so good": "album2sound.html",
+    "litlle l": "album2sound.html",
+    "you give me something": "album2sound.html",
+    "love foolosophy": "album2sound.html",
+    "corner of the earth": "album2sound.html",
+    "rusty cage": "album1jam.html",
+    "outshined": "album1jam.html",
+    "slaves & bulldozers": "album1jam.html",
+    "jesus christ pose": "album1jam.html",
+    "room a thousand years wide": "album1jam.html",
+    "let me down": "album2jam.html",
+    "my wave": "album2jam.html",
+    "fell on black days": "album2jam.html",
+    "black hole sun": "album2jam.html",
+    "spoonman": "album2jam.html",
+};
+            
+            searchButton.addEventListener("click", function () {
+                const query = searchInput.value.toLowerCase().trim();
+                
+                if (albums[query]) {
+                    window.location.href = albums[query];
+                } else if (songs[query]) {
+                    window.location.href = songs[query];
+                } else {
+                    alert("No se encontraron resultados para: " + searchInput.value);
+                }
+            });
+            
+            searchInput.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    searchButton.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
